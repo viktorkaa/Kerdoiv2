@@ -11,25 +11,33 @@
 <body>
 
     <h1>Kérdőív</h1>
+    <h2>Klasszikus Filmek</h2>
     <div class="container">
-        Q1 what is 100+200?<hr>
-        <input type="radio" name="kerdes1" id="helyes1">300<br>
-        <input type="radio" name="kerdes1">400<br>
-        <input type="radio" name="kerdes1">150<br>
-        <input type="radio" name="kerdes1">600<br>
+        Ki alakítja a Rocky című film-sorozatban a főszereplőt?<hr>
+        <input type="radio" name="kerdes1" id="helyes1">Silvester Stallone<br>
+        <input type="radio" name="kerdes1">Marlon Brando<br>
+        <input type="radio" name="kerdes1">Fred Astaire<br>
+        <input type="radio" name="kerdes1">Egyik sem<br>
         <button class="next" onclick="kovetkezo(1)">Következő</button>
     </div>
 
     <div class="container">
-        Q2 what is 100+300?<hr>
-        <input type="radio" name="kerdes2" >300<br>
-        <input type="radio" name="kerdes2" id="helyes2">400<br>
-        <input type="radio" name="kerdes2">150<br>
-        <input type="radio" name="kerdes2">600<br>
+        A Kincs ami nincs című filben, hogy hívják Terence Hill-t a valóságban?<hr>
+        <input type="radio" name="kerdes2" >Charlie O'Brien<br>
+        <input type="radio" name="kerdes2" id="helyes2">Alan Lloyd<br>
+        <input type="radio" name="kerdes2">Frisco Joe<br>
+        <input type="radio" name="kerdes2">Anulu<br>
         <button class="next" onclick="kovetkezo(2)">Következő</button>
-    </div>
+    </div> 
 
-    
+    <div class="container">
+        A szállító című filmben Jason Statham milyen ikonikus autóval közlekedett?<hr>
+        <input type="radio" name="kerdes2">Audi A3 1.9 TDI<br>
+        <input type="radio" name="kerdes2">BMW 316<br>
+        <input type="radio" name="kerdes2">Audi A4<br>
+        <input type="radio" name="kerdes2" id="helyes3">E38 kódjelű 7-es BMW<br>
+        <button onclick="result()">Következő</button>
+    </div>
 
 </body>
 
