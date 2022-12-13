@@ -1,0 +1,169 @@
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kérdőív</title>
+</head>
+
+<body>
+
+    <h1>Kérdőív</h1>
+    <h2>Klasszikus Filmek</h2>
+
+    <div class="container">
+        Ki alakítja a Rocky című film-sorozatban a főszereplőt?
+        <hr>
+        <input type="radio" name="question1" id="correct1">Silvester Stallone<br>
+        <input type="radio" name="question1">Marlon Brando<br>
+        <input type="radio" name="question1">Fred Astaire<br>
+        <input type="radio" name="question1">Egyik sem<br>
+        <button class="next" onclick="next(1)">KÖVETKEZŐ</button>
+    </div>
+
+    <div class="container">
+        A Kincs ami nincs című filben, hogy hívják Terence Hill-t a valóságban?
+        <hr>
+        <input type="radio" name="question2">Charlie O'Brien<br>
+        <input type="radio" name="question2" id="correct2">Alan Lloyd<br>
+        <input type="radio" name="question2">Frisco Joe<br>
+        <input type="radio" name="question2">Anulu<br>
+        <button class="next" onclick="next(2)">KÖVETKEZŐ</button>
+    </div>
+
+    <div class="container">
+        A szállító című filmben Jason Statham milyen ikonikus autóval közlekedett?
+        <hr>
+        <input type="radio" name="question3">Audi A3 1.9 TDI<br>
+        <input type="radio" name="question3">BMW 316<br>
+        <input type="radio" name="question3">Audi A4<br>
+        <input type="radio" name="question3" id="correct3">E38 kódjelű 7-es BMW<br>
+        <button onclick="result()">KÖVETKEZŐ</button>
+    </div>
+    <script>
+        document.getElementsByClassName('container')[0].style.display = "block";
+        function next(id) {
+            document.getElementsByClassName('container')[id - 1].style.display = "none";
+            document.getElementsByClassName('container')[id].style.display = "block";
+        }
+
+        function result() {
+            var pont = 0;
+            if (document.getElementById('correct1').checked) {
+                pont++;
+            }
+            if (document.getElementById('correct2').checked) {
+                pont++;
+            }
+            if (document.getElementById('correct3').checked) {
+                pont++;
+            }
+            alert("Szép volt! Az ön pontja: " + pont);
+        }
+    </script>
+
+    <style>
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            display: none;
+            background-color: bisque;
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            border-top: 5px solid;
+            border-image: linear-gradient(to right, grey 25%, yellow 25%, yellow 50%, red 50%, red 75%, teal 75%) 5;
+
+
+        }
+
+        button {
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        body {
+            background-color: rgb(255, 0, 0);
+            background-color: hsla(0, 100%, 50%, 0.5);
+
+        }
+    </style>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    =======
+=======
+
+<<<<<<< HEAD
+
+
+   
+     
+  
+
+    <form>   
+       
+        <h3>Ki volt a Jumanji vár a dzsungel főszereplője?</h3>
+       
+        <input type="checkbox" id="possibility1" name="possibility1" value="Dwayne Johnson">
+        <label for="vehicle1"> Dwayne Johnson </label><br>
+        <input type="checkbox" id="possibility2" name="possibility2" value="Terence Hill">
+        <label for="vehicle2"> Terence Hill</label><br>
+        <input type="checkbox" id="possibility3" name="possibility3" value="Bud Spencer">
+        <label for="vehicle3"> Bud Spencer</label><br><br>
+        <input type="submit" value="beváltás">
+      </form>
+      <br><br>
+      <form>
+        
+        <h3>Mi miatt lett vége a Titanic filbem a Titanic hajónak?</h3>
+     
+        <input type="checkbox" id="possibility4" name="possibility4" value="cunami">
+        <label for="vehicle1"> cunami</label><br>
+        <input type="checkbox" id="possibility5" name="possibility5" value="hurrikán">
+        <label for="vehicle2"> hurrikán</label><br>
+        <input type="checkbox" id="possibility6" name="possibility6" value="jéghegy">
+        <label for="vehicle3"> jéghegy</label><br><br>
+        <input type="submit" value="beváltás">
+      </form>
+      <br><br>
+      <form>
+        
+        <h3>Hány másodperig várt dóra minden egyes kérdése után a Dóra a felfedőző című televíziós sorozatban?</h3>
+     
+    
+        <input type="checkbox" id="possibility7" name="possibility7" value="10mp">
+        <label for="vehicle1"> 10mp</label><br>
+        <input type="checkbox" id="possibility8" name="possibility8" value="5mp">
+        <label for="vehicle2"> 5mp</label><br>
+        <input type="checkbox" id="possibility9" name="possibility9" value="változó">
+        <label for="vehicle3"> változó</label><br><br>
+        <input type="submit" value="beváltás">
+
+      </form>
+      <br><br>
+</body>
+
+  
+=======
+>>>>>>> 32fc1f91faa0079345f8dbd288f0a48334af4870
+
+</html>
+>>>>>>> a49e5a1c287d9cf29d7b6b3869781c2b2111827f
