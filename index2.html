@@ -104,6 +104,11 @@
             background-color: hsla(0, 100%, 50%, 0.5);
 
         }
+
+        form {
+            background-color: bisque;
+            border: 3px solid black;
+        }
     </style>
 
 
@@ -113,26 +118,26 @@
        
         <h3>Ki volt a Jumanji vár a dzsungel főszereplője?</h3>
        
-        <input type="checkbox" id="possibility1" name="possibility1" value="Dwayne Johnson">
+        <input type="checkbox" id="nyertes1" name="possibility1" value="Dwayne Johnson">
         <label for="vehicle1"> Dwayne Johnson </label><br>
         <input type="checkbox" id="possibility2" name="possibility2" value="Terence Hill">
         <label for="vehicle2"> Terence Hill</label><br>
         <input type="checkbox" id="possibility3" name="possibility3" value="Bud Spencer">
         <label for="vehicle3"> Bud Spencer</label><br><br>
-        <input type="submit" value="beváltás">
+        <button onclick="result(1)">beváltás</button>
       </form>
       <br><br>
       <form>
         
         <h3>Mi miatt lett vége a Titanic filbem a Titanic hajónak?</h3>
      
-        <input type="checkbox" id="possibility4" name="possibility4" value="cunami">
+        <input type="checkbox" id="nyertes4" name="possibility4" value="cunami">
         <label for="vehicle1"> cunami</label><br>
         <input type="checkbox" id="possibility5" name="possibility5" value="hurrikán">
         <label for="vehicle2"> hurrikán</label><br>
         <input type="checkbox" id="possibility6" name="possibility6" value="jéghegy">
         <label for="vehicle3"> jéghegy</label><br><br>
-        <input type="submit" value="beváltás">
+        <button onclick="result(2)">beváltás</button>
       </form>
       <br><br>
       <form>
@@ -140,14 +145,13 @@
         <h3>Hány másodperig várt dóra minden egyes kérdése után a Dóra a felfedőző című televíziós sorozatban?</h3>
      
     
-        <input type="checkbox" id="possibility7" name="possibility7" value="10mp">
+        <input type="checkbox" id="nyertes7" name="possibility7" value="10mp">
         <label for="vehicle1"> 10mp</label><br>
         <input type="checkbox" id="possibility8" name="possibility8" value="5mp">
         <label for="vehicle2"> 5mp</label><br>
         <input type="checkbox" id="possibility9" name="possibility9" value="változó">
         <label for="vehicle3"> változó</label><br><br>
-        <input type="submit" value="beváltás">
-
+        <button onclick="result()">beváltás</button>
       </form>
       <br><br>
 </body>
