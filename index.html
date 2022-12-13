@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kerdoiv</title>
+    <title>Kérdőív</title>
 </head>
+
 <body>
-    <h1>Első cím</h1>
+
+    <h1>Kérdőív</h1>
+    <h2>Klasszikus Filmek</h2>
+    <div class="container">
+        Ki alakítja a Rocky című film-sorozatban a főszereplőt?<hr>
+        <input type="radio" name="kerdes1" id="helyes1">Silvester Stallone<br>
+        <input type="radio" name="kerdes1">Marlon Brando<br>
+        <input type="radio" name="kerdes1">Fred Astaire<br>
+        <input type="radio" name="kerdes1">Egyik sem<br>
+        <button class="next" onclick="kovetkezo(1)">Következő</button>
+    </div>
+
+    <div class="container">
+        A Kincs ami nincs című filben, hogy hívják Terence Hill-t a valóságban?<hr>
+        <input type="radio" name="kerdes2" >Charlie O'Brien<br>
+        <input type="radio" name="kerdes2" id="helyes2">Alan Lloyd<br>
+        <input type="radio" name="kerdes2">Frisco Joe<br>
+        <input type="radio" name="kerdes2">Anulu<br>
+        <button class="next" onclick="kovetkezo(2)">Következő</button>
+    </div> 
+
+    <div class="container">
+        A szállító című filmben Jason Statham milyen ikonikus autóval közlekedett?<hr>
+        <input type="radio" name="kerdes2">Audi A3 1.9 TDI<br>
+        <input type="radio" name="kerdes2">BMW 316<br>
+        <input type="radio" name="kerdes2">Audi A4<br>
+        <input type="radio" name="kerdes2" id="helyes3">E38 kódjelű 7-es BMW<br>
+        <button onclick="result()">Következő</button>
+    </div>
 
 </body>
+<<<<<<< HEAD
 </html>
 
 <form action="/action_page.php">
@@ -22,3 +53,7 @@
     <input type="submit" value="Submit">
   </form>
   
+=======
+
+</html>
+>>>>>>> a49e5a1c287d9cf29d7b6b3869781c2b2111827f
